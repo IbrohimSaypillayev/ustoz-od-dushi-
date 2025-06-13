@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="h1">Pokemon</h1>
+    <div class="input-elements">
+      <input type="text" id="searchPokemon" placeholder="search your pokemon" />
+
+      <select id="pokemonType">
+        <option value="all">All</option>
+        <option value="Grass Poison">Grass Poison</option>
+        <option value="Fire">Fire</option>
+        <option value="Water">Water</option>
+        <option value="Bug">Bug</option>
+      </select>
+
+      <select name="" id="pokemonFilter">
+        <option value="alphabeticalAsc">A-Z</option>
+        <option value="alphabeticalDesc">Z-A</option>
+        <option value="weightAsc">С самого тяжёлого до лёгкого</option>
+        <option value="weightDesc">C самого лёгкого до тяжёлого</option>
+      </select>
+
+      <input type="submit" id="searchButton" value="Search" />
+    </div>
+
+    <div class="containerPokemons">
+      <div class="card">
+        <h1 class="pokemon-name">Bulbasaur</h1>
+        <img src="Bulbasaur.png" alt="" class="pokemon-img" />
+        <div class="pokemon-type">
+          <p>Grass Poison</p>
+        </div>
+        <p class="pokemon-weight">6.9 kg</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="pokemons.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
